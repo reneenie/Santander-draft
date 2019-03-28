@@ -19,5 +19,6 @@ def fa(train, test, n_component):
     test_out = transformer.fit_transform(test)
     return train_out, test_out
 
+## Started with factor number = 50, and we are concerned with R^2,thus increase to 100
 n_component = 100
 train_trans,test_trans = fa(train_features,test_features,n_component)
